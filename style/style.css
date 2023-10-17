@@ -12,13 +12,14 @@ nav{
     justify-content: space-between;
     align-items: center;
 }
-nav .logo a{
+nav .fixed-header a{
     background: linear-gradient(to right, #b61f90 50%, #ffffffd2 50%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 35px;
     font-weight: 600;
 }
+
 nav ul{
     display: flex;
     align-items: center;
@@ -103,7 +104,7 @@ nav li a:hover{
 
 .banner2{
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('../img/TCC2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.281), rgba(0, 0, 0, 0.308)), url('../img/tcc9.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -167,6 +168,16 @@ nav li a:hover{
     border-radius: 20px;
     font-weight: 600;
     margin: 5;
+}
+/* Estilo para telas menores, como celulares */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ocultar o menu padrão */
+    }
+
+    .menu-mobile {
+        display: block; /* Mostrar um ícone de menu para telas menores */
+    }
 }
 
 
